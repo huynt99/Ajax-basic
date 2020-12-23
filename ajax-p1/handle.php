@@ -1,10 +1,6 @@
 <?php
-$con = mysqli_connect("127.0.0.1", "mimi", 'root', 'test');
+require_once "db.php";
 
-if (!$con) {
-	echo "Connector die!";
-	die();
-}
 $user = $_POST;
 $user['pass'] = md5($user['pass']);
 

@@ -1,9 +1,5 @@
 <?php
-$con = mysqli_connect("localhost", "mimi", "root", "test");
-
-if (!$con) {
-	echo "Connect failed";
-}
+require_once "../db.php";
 
 $from = $_GET['from'];
 $to = $_GET['to'];
