@@ -7,9 +7,11 @@
             const email = $("#email").val();
             const pass = $("#pass").val();
 
-            document.getElementById('name').value = '';
-            document.getElementById('email').value = '';
-            document.getElementById('pass').value = '';
+            // document.getElementById('name').value = '';
+            // document.getElementById('email').value = '';
+            // document.getElementById('pass').value = '';
+            // $(".form").trigger('reset');
+            $(this).parent()[0].reset();
             $.ajax({
                 url: "http://toptra.com/ajax-p1/handle.php",
                 type: "POST",
