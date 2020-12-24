@@ -1,26 +1,19 @@
-<?php require_once "../header.php"; ?>
+<?php require_once "./src/Views/header.php"; ?>
 
-    <div class="ui secondary  menu">
-        <a class="active item">
-            Home
-        </a>
-        <a class="item">
-            Messages
-        </a>
-        <a class="item">
-            Friends
-        </a>
-        <div class="right menu">
-            <div class="item">
-                <div class="ui icon input">
-                    <input type="text" placeholder="Search...">
-                    <i class="search link icon"></i>
-                </div>
-            </div>
-            <a class="ui item">
-                Logout
-            </a>
+    <form class="ui form" method="post" action="?route=register">
+        <div class="field">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Name">
         </div>
-    </div>
+        <div class="field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Email">
+        </div>
+        <div class="field">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Password">
+        </div>
+        <button id="sendRegister" class="ui button" type="submit">Submit</button>
+    </form>
 
-<?php require_once "../footer.php"; ?>
+<?php require_once "./src/Views/footer.php"; ?>
